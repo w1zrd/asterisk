@@ -1,0 +1,8 @@
+version: "3"
+services:
+ asterisk:
+  build: .
+  container_name: voip
+  volumes:
+      - ./config/:/etc/asterisk/
+  network_mode: "host"
